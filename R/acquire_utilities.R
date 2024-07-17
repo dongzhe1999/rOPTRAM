@@ -94,12 +94,12 @@ acquire_scihub <- function(
     return(NULL)
   }
   # Create a folder for the BOA in the output directory
-  result_folder_boa <- file.path(output_dir, "BOA")
+  #result_folder_boa <- file.path(output_dir, "BOA")
 
   # Check if the folder already exists; if not, create it
-  if (!dir.exists(result_folder_boa)) {
-    dir.create(result_folder_boa)
-  }
+  # if (!dir.exists(result_folder_boa)) {
+  #   dir.create(result_folder_boa)
+  # }
 
   # Create a folder named after veg_index in the output directory
   result_folder_vi <- file.path(output_dir, veg_index)
@@ -170,11 +170,11 @@ acquire_scihub <- function(
     return(result_list)
   }
 
-  result_boa <- get_result_list(script_file_boa, result_folder_boa)
+  #result_boa <- get_result_list(script_file_boa, result_folder_boa)
   result_str <- get_result_list(script_file_str, result_folder_str)
   result_vi <- get_result_list(script_file_vi, result_folder_vi)
 
-  return(result_boa)
+  return(result_str)
 }
 
 #' @title Check access to scihub API
