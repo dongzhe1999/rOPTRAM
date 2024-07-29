@@ -157,7 +157,7 @@ acquire_scihub <- function(
                                      collection = "sentinel-2-l2a",
                                      format = "image/tiff",
                                      mask = TRUE,
-                                     resolution = c(10,10),
+                                     resolution = c(15,15),
                                      token = tok)
 
         raster_file <- file.path(s_dir,
