@@ -67,6 +67,7 @@ optram_safe <- function(safe_dir,
       return(NULL)
     }
     SWIR_band <- getOption("optram.SWIR_band")
+    # remark
     veg_index <- getOption("optram.veg_index")
 
     # Loop over the downloaded S2 folders (dates),
