@@ -8,7 +8,9 @@
 [![Project Status:
 ACTIVE](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![R-CMD-check](https://github.com/ropensci/rOPTRAM/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ropensci/rOPTRAM/actions/workflows/R-CMD-check.yaml)
+[![DOI](https://zenodo.org/badge/811356946.svg)](https://zenodo.org/doi/10.5281/zenodo.13257766)
 <!-- badges: end -->
+[![DOI](https://joss.theoj.org/papers/10.21105/joss.07086/status.svg)](https://doi.org/10.21105/joss.07086)
 
 `rOPTRAM` implements The OPtical TRapezoid Model (OPTRAM) to derive soil
 moisture based on the linear relation between a vegetation index,
@@ -161,23 +163,24 @@ rOPTRAM::optram_options()
 #> [1] "feature_col = ID"
 #> [1] "max_cloud = 12"
 #> [1] "max_tbl_size = 1e+06"
+#> [1] "only_vi_str = FALSE"
+#> [1] "overwrite = FALSE"
 #> [1] "period = full"
 #> [1] "plot_colors = no"
 #> [1] "remote = scihub"
 #> [1] "rm.hi.str = FALSE"
 #> [1] "rm.low.vi = FALSE"
+#> [1] "scm_mask = TRUE"
 #> [1] "SWIR_band = 11"
+#> [1] "tileid = NA"
 #> [1] "trapezoid_method = linear"
 #> [1] "veg_index = NDVI"
 #> [1] "vi_step = 0.005"
 #> NULL
-```
-
-``` r
 # Change one options
 rOPTRAM::optram_options("veg_index", "SAVI", show_opts = FALSE)
 #> 
-#> New option for veg_index applied.
+#> Option for: veg_index set to: SAVI
 ```
 
 Next a basic example which shows how to:
